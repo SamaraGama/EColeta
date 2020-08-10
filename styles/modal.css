@@ -14,7 +14,7 @@
     transition: 400ms;
 }
 
-#model.hide {
+#modal.hide {
     display: none;
 }
 
@@ -29,6 +29,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    
+    margin-bottom: 48px;
 }
 
 #modal .header a {
