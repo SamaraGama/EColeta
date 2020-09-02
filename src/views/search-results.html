@@ -1,35 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt_br">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "layout.html" %}
+{% set pageId = "page-search-results" %}
+{% block title %}
     <title>Resultado da pesquisa</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+{% endblock title %}
+
+{% block styles %}
     <link rel="stylesheet" href="styles/search-results.css">
+{% endblock styles %}
 
-    <link rel="stylesheet" href="styles/responsive.css">
+{% block content %}
+    {% include "partials/page-header.html" %}
 
+    <main>
 
-</head>
-
-<body>
-
-    <div id="page-search-results"> 
-        
-        <header>             
-            <h3><img src="/Assets/logo.svg" alt=""></h3>    
-                <a href="index.html">
-                    <span></span>
-                    Voltar para home
-                </a>
-        </header>
-        <main>
-
-        
         <h4>
-            <strong>2 pontos</strong> encontrados
+            <strong>2 pontos</strong>
+            encontrados
         </h4>
 
         <div class="cards">
@@ -38,8 +24,10 @@
                 <h1>Colectoria</h1>
                 <h3>Resíduos Eletrônicos, Lâmpadas</h3>
                 <p>
-                    São Bernardo do Campo, São Paulo  <br/>
-                    Rua Maria de Fátima, Baeta Neves <br/>
+                    São Bernardo do Campo, São Paulo
+                    <br/>
+                    Rua Maria de Fátima, Baeta Neves
+                    <br/>
                     Nº 123
                 </p>
 
@@ -50,16 +38,14 @@
                 <h1>Papersider</h1>
                 <h3>Papéis e Papelão</h3>
                 <p>
-                    Cidade, Estado <br/>
-                    Rua, Bairro <br/>
+                    Cidade, Estado
+                    <br/>
+                    Rua, Bairro
+                    <br/>
                     Nº 000
                 </p>
-        </div>
+            </div>
 
         </div>
     </main>
-    </div>
-    
-</body>
-
-</html> 
+{% endblock content %}
