@@ -6,7 +6,7 @@ function populateUFs() {
     .then( states => {
         
         for ( const state of states ) {
-            ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
+            ufSelect.innerHTML += `<option value='${state.id}'>${state.nome}</option>`
         }
         
     } )
@@ -22,7 +22,7 @@ function getCity(event) {
 
     const indexOfSelectedState = event.target.selectedIndex
 
-    stateInput.value = event.target.options[indexOfSelectedState]
+    stateInput.value = event.target.options[indexOfSelectedState].text
 
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`
     
@@ -35,7 +35,7 @@ function getCity(event) {
     .then( cities => {
         
         for ( const city of cities ) {
-            citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`
+            citySelect.innerHTML += `<option value='${city.nome}'>${city.nome}</option>`
         }
         
         citySelect.disabled = false
@@ -47,6 +47,9 @@ function getCity(event) {
 document
     .querySelector("select[name=uf]")
     .addEventListener("change", getCity)
+
+//itens de coleta
+//registra todos os li's 
 
 const itemsToCollect = document.querySelectorAll(".items-grid li")
 
@@ -64,6 +67,8 @@ function handleSelectedItem(event) {
     itemLi.classList.toggle("selected")
 
     const itemId = itemLi.dataset.id
+
+    console.log('itemId: ', itemId)
     
     // verifica se há itens selecionados e, se positivo, os armazena
     
@@ -85,6 +90,8 @@ function handleSelectedItem(event) {
         // se o item não estiver selecionado, é incluído na seleção
         selectedItems.push(itemId)
     }
+
+    console.log('selectedItems: ', selectedItems)
     
     // atualiza o campo escondido com os itens selecionados 
     collectedItems.value = selectedItems
