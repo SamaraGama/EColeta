@@ -1,4 +1,4 @@
-<h1><img src=”https://github.com/SamaraGama/EColeta/tree/master/public/assets/logo.svg”></h1>
+![](public/assets/logo.svg)
 
 
 <h2>:exclamation: Sobre:</h2>
@@ -25,16 +25,17 @@ Esse projeto foi proposto pela trilha Starter da Next Level Week, distribuída p
   <ul>
     <li>IBGE localidades.</li>
   </ul>
- 
-<h2>:mag_right:  Pré-visualização:</h2>
-<h3>Página inicial</h3>
-<img src=”https://github.com/SamaraGama/EColeta/tree/master/docs/screenshots/home.png”, width="400">
-<h3>Página de cadastro de ponto de coleta</h3>
-<img src=”https://github.com/SamaraGama/EColeta/tree/master/docs/screenshots/form.png”>
-<h3>Aba de pesquisa</h3>
-<img src=”https://github.com/SamaraGama/EColeta/tree/master/docs/screenshots/search.png”>
-<h3>Página de resultados da pesquisa por cidade</h3>
-<img src=”https://github.com/SamaraGama/EColeta/tree/master/docs/screenshots/search-results.png”>
+  
+
+## :mag_right:  Pré-visualização:
+### Página inicial
+![home](https://user-images.githubusercontent.com/62730150/92491177-516be480-f1c8-11ea-9939-4c67d1666a4e.PNG)
+### Página de cadastro de ponto de coleta
+![form](https://user-images.githubusercontent.com/62730150/92491975-3baaef00-f1c9-11ea-8c89-e72e7685b62a.PNG)
+### Aba de pesquisa
+![search](https://user-images.githubusercontent.com/62730150/92491517-b32c4e80-f1c8-11ea-81c9-2c21bce838a8.PNG)
+### Página de resultados da pesquisa por cidade
+![search-results](https://user-images.githubusercontent.com/62730150/92491542-bb848980-f1c8-11ea-9541-5ba08b17ab6e.PNG)
 
 <h2>:question: Como executar:</h2>
   <h3>1. Pré-requisitos:</h3>
