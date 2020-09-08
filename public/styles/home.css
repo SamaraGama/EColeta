@@ -1,7 +1,7 @@
 
 #page-home{
     height: 125vh;
-    background: url(../Assets/home-background.svg) no-repeat;
+    background: url(../assets/home-background.svg) no-repeat;
     background-position: 25vw bottom;
 }
 
@@ -27,7 +27,7 @@
 #page-home header a span {
     margin-right: 16px;
     display: flex;
-    background-image: url(../Assets/log-in.svg);
+    background-image: url(../assets/log-in.svg);
     width: 20px;
     height: 20px;
 }
@@ -79,7 +79,7 @@
 
 #page-home main a span::after {
     content: "" ;
-    background-image: url('../Assets/search.svg');
+    background-image: url('../assets/search.svg');
     width: 20px;
     height: 20px;
 
