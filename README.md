@@ -1,2 +1,1 @@
-
-![](public/assets/logo.svg)
+<align="center" img src=”public/assets/logo.svg”>
