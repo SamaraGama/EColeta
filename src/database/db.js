@@ -20,9 +20,10 @@ module.exports = db
             items TEXT
         );
     `)
+    */
 
     //inserir dados
-    const query = `
+    /*const query = `
     INSERT INTO places (
         name,
         image,
